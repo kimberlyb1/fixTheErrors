@@ -17,9 +17,9 @@ function Greeting() {
     return (
         <div>
             <h1> Hello {name}!</h1>
-            <input type="text" placeholder="Enter your name" onChage={handleNameChange} />
+            <input type="text" placeholder="Enter your name" onChange={handleNameChange} />
         </div>
     );
 }
 
-export default greeting;
+export default Greeting;

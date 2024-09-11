@@ -1,0 +1,26 @@
+{
+    "cities": [
+      {
+        "name": "New York",
+        "temperature": 22,
+        "description": "Partly cloudy",
+        "humidity": 60,
+        "wind": 12
+      },
+      {
+        "name": "Los Angeles",
+        "temperature": 27,
+        "description": "Sunny",
+        "humidity": 50,
+        "wind": 8
+      },
+      {
+        "name": "Chicago",
+        "temperature": 15,
+        "description": "Cloudy",
+        "humidity": 70,
+        "wind": 18
+      }
+    ]
+  }
+  

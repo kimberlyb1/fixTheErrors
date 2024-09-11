@@ -13,14 +13,18 @@ function LoginStatus() {
     return (
         <div>
             {isLoggedIn ? (
+                <>
                 <h2>Welcome back!</h2>
                 <button onClick={toggleLogin}>Log Out</button>
+            </>
             ) : (
+                <>
                 <h2>Please log in</h2>
                 <button onClick={toggleLogin}>Log In</button>
-            )}
+           </> 
+        )}
         </div>
     );
 }
 
-export default Loginstatus;
+export default LoginStatus;

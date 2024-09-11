@@ -11,8 +11,10 @@ function TodoList() {
     }
 
     function addTask() {
-        setTasks(tasks.push(task));
+        if(task.trim() !== ""){
+        setTasks([...tasks, task]);
         setTask('');
+        }
     }
 
     return (
@@ -27,4 +29,4 @@ function TodoList() {
     );
 }
 
-export default todoList;
+export default TodoList;

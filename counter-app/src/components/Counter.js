@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 // 3.Make sure the buttons properly increase, decrease, and reset the count.
 
 function Counter() {
-    const [count, setCount] = useState;
+    const [count, setCount] = useState(0);
 
     function handleIncrease() {
         setCount(count + 1);
@@ -14,15 +14,15 @@ function Counter() {
         setCount(count - 1);
     }
 
-    function resetCounter {
+    function resetCounter() {
         setCount(0);
     }
 
     return (
         <div>
             <h1>Counter: {count}</h1>
-            <button onclick={handleIncrease}>Increase</button>
-            <button onclick={handleDecrease}>Decrease</button>
+            <button onClick={handleIncrease}>Increase</button>
+            <button onClick={handleDecrease}>Decrease</button>
             <button onClick={resetCounter}>Reset</button>
         </div>
     );
