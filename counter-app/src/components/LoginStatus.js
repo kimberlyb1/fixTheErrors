@@ -16,15 +16,24 @@ function LoginStatus() {
                 <>
                 <h2>Welcome back!</h2>
                 <button onClick={toggleLogin}>Log Out</button>
+<<<<<<< HEAD
                 </>
+=======
+            </>
+>>>>>>> ffa427272dec2aab18b182c633f0fb6849dc326e
             ) : (
                 <>
                 <h2>Please log in</h2>
                 <button onClick={toggleLogin}>Log In</button>
+<<<<<<< HEAD
                 </>
             )}
         
 
+=======
+           </> 
+        )}
+>>>>>>> ffa427272dec2aab18b182c633f0fb6849dc326e
         </div>
     );
 }

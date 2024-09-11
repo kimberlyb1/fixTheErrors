@@ -11,9 +11,15 @@ function TodoList() {
     }
 
     function addTask() {
+<<<<<<< HEAD
         if (task.trin() !== "") {
         setTasks({...tasks, task});
+=======
+        if(task.trim() !== ""){
+        setTasks([...tasks, task]);
+>>>>>>> ffa427272dec2aab18b182c633f0fb6849dc326e
         setTask('');
+        }
     }
 }
 
