@@ -11,9 +11,11 @@ function TodoList() {
     }
 
     function addTask() {
-        setTasks(tasks.push(task));
+        if (task.trin() !== "") {
+        setTasks({...tasks, task});
         setTask('');
     }
+}
 
     return (
         <div>
@@ -21,10 +23,12 @@ function TodoList() {
             <input type="text" value={task} onChange={handleInput} />
             <button onClick={addTask}>Add Task</button>
             <ul>
-                {tasks.map(task => <li>{task}</li>)}
-            </ul>
+                {tasks.map((task, index) => (
+                     <li key={index}>{task}</li>)}
+                ))}
+                            </ul>
         </div>
     );
 }
 
-export default todoList;
+export default TodoList;

@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 // 2.Fix the errors so that the greeting app functions as expected.
 // 3.Ensure that as users type their name, it dynamically updates the greeting and the document title.
 function Greeting() {
-    const [name, setName] = useState();
+    const [name, setName] = useState("");
 
     useEffect(() => {
         document.title = 'Welcome ' + name;
@@ -17,9 +17,9 @@ function Greeting() {
     return (
         <div>
             <h1> Hello {name}!</h1>
-            <input type="text" placeholder="Enter your name" onChage={handleNameChange} />
+            <input type="text" placeholder="Enter your name" onChange={handleNameChange} />
         </div>
     );
 }
 
-export default greeting;
+export default Greeting;
